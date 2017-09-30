@@ -30,8 +30,26 @@ filetype plugin indent on
 set expandtab
 set shiftwidth=2
 set softtabstop=2
+set tabstop=2
+
+filetype indent on	" Indent based on file type
 
 " colors
 syntax enable
 set background=dark
 colorscheme solarized
+
+" UI stuff
+set number	" Show line numbers
+set showcmd	" Show command in bottom bar
+set cursorline	" highlight current line
+
+set wildmenu		" Allow visual autocmplete
+set lazyredraw		" Dont waste time redrawing
+set showmatch		" Matching braces
+
+set incsearch           " search as characters are entered
+set hlsearch            " highlight matches
+" turn off search highlight
+nnoremap <leader><space> :nohlsearch<CR>
+
