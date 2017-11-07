@@ -5,8 +5,11 @@ ulimit -n 1024
 PS1='\h:\W \u\$ '
 
 #Bind commands
-bind 'set completion-ignore-case on'
-bind 'set show-all-if-ambiguous on'
+if [ -t 1 ] 
+then
+  bind 'set completion-ignore-case on'
+  bind 'set show-all-if-ambiguous on'
+fi
 
 #History
 export HISTSIZE=10000
