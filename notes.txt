@@ -1,0 +1,4 @@
+Sudo feedback:
+sudo visudo
+Append to Defaults env_reset, ",pwfeedback"
+test: sudo -k; sudo ls
