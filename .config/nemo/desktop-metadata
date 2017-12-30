@@ -1,0 +1,23 @@
+[desktop-monitor-0]
+nemo-icon-view-auto-layout=true
+nemo-icon-view-tighter-layout=false
+nemo-icon-view-keep-aligned=true
+nemo-icon-view-layout-timestamp=1511885987
+
+[timemachine on trapkast.local.volume]
+nemo-icon-position=91,134
+monitor=0
+icon-scale=1
+nemo-icon-position-timestamp=1510067092
+
+[timemachine on trapkast.volume]
+nemo-icon-position=91,34
+monitor=0
+icon-scale=1
+nemo-icon-position-timestamp=1511367878
+
+[downloads on trapkast.local.volume]
+nemo-icon-position=91,32
+monitor=0
+icon-scale=1
+nemo-icon-position-timestamp=1511886815
