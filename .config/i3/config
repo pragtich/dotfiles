@@ -155,8 +155,8 @@ bindsym $mod+r mode "resize"
 #  Sound volume
 #  From https://faq.i3wm.org/question/125/how-to-change-the-systems-volume.1.html
 set $sink `pactl list short sinks | grep RUNNING | cut -f1`
-bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume $sink -- +10%
-bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume $sink -- -10%
+bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume $sink +10%
+bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume $sink -10%
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute $sink toggle
 
 
