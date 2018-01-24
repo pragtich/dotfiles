@@ -1,2 +1,26 @@
 [Added Associations]
 application/octet-stream=emacs25.desktop;
+x-scheme-handler/http=userapp-Firefox-SG9IDZ.desktop;
+x-scheme-handler/https=userapp-Firefox-SG9IDZ.desktop;
+x-scheme-handler/ftp=userapp-Firefox-SG9IDZ.desktop;
+x-scheme-handler/chrome=userapp-Firefox-SG9IDZ.desktop;
+text/html=userapp-Firefox-SG9IDZ.desktop;
+application/x-extension-htm=userapp-Firefox-SG9IDZ.desktop;
+application/x-extension-html=userapp-Firefox-SG9IDZ.desktop;
+application/x-extension-shtml=userapp-Firefox-SG9IDZ.desktop;
+application/xhtml+xml=userapp-Firefox-SG9IDZ.desktop;
+application/x-extension-xhtml=userapp-Firefox-SG9IDZ.desktop;
+application/x-extension-xht=userapp-Firefox-SG9IDZ.desktop;
+
+[Default Applications]
+x-scheme-handler/http=userapp-Firefox-SG9IDZ.desktop
+x-scheme-handler/https=userapp-Firefox-SG9IDZ.desktop
+x-scheme-handler/ftp=userapp-Firefox-SG9IDZ.desktop
+x-scheme-handler/chrome=userapp-Firefox-SG9IDZ.desktop
+text/html=userapp-Firefox-SG9IDZ.desktop
+application/x-extension-htm=userapp-Firefox-SG9IDZ.desktop
+application/x-extension-html=userapp-Firefox-SG9IDZ.desktop
+application/x-extension-shtml=userapp-Firefox-SG9IDZ.desktop
+application/xhtml+xml=userapp-Firefox-SG9IDZ.desktop
+application/x-extension-xhtml=userapp-Firefox-SG9IDZ.desktop
+application/x-extension-xht=userapp-Firefox-SG9IDZ.desktop
