@@ -21,9 +21,6 @@ export EDITOR="$ECLIENT \$@ "
 export VISUAL=$EDITOR
 export GIT_EDITOR="$VISUAL +0"
 
-#alias e="$VISUAL &"
-#alias ew="$VISUAL -c &"
-
 function e()
 {
     $ECLIENT "$@" &
