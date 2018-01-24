@@ -10,8 +10,12 @@ export ARCHFLAGS="-arch x86_64"
 export LANG=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
 
-
-export ECLIENT="emacsclient -s /tmp/emacs${UID}/server -a /Applications/Emacs.app/Contents/MacOS/Emacs"
+case $OSTYPE  in
+    linux*)  EMACS='emacs' ;;
+    darwin*) EMACS='/Applications/Emacs.app/Contents/MacOS/Emacs' ;;
+esac
+export EMACS
+export ECLIENT="emacsclient -s /tmp/emacs${UID}/server -a $EMACS"
 export EDITOR="$ECLIENT \$@ "
 export VISUAL=$EDITOR
 export GIT_EDITOR="$VISUAL +0"
