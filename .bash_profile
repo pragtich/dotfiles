@@ -21,6 +21,9 @@ export EDITOR="$ECLIENT \$@ "
 export VISUAL=$EDITOR
 export GIT_EDITOR="$VISUAL +0"
 
+# Enable dir colors on mac
+export CLICOLOR=1
+
 function e()
 {
     $ECLIENT "$@" &
