@@ -24,6 +24,9 @@ export GIT_EDITOR="$VISUAL +0"
 # Enable dir colors on mac
 export CLICOLOR=1
 
+# Disable xon
+stty -ixon
+
 function e()
 {
     $ECLIENT "$@" &
