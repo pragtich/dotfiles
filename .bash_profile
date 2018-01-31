@@ -36,6 +36,8 @@ function ew()
 }
 export -f ew
 
+mcd() { mkdir -p $1; cd $1; } 
+
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 
 if [[ "$OSTYPE" == "darwin"* ]]; then 
@@ -58,4 +60,5 @@ if [[ "$OSTYPE" == "darwin"* ]]; then
 	source /usr/local/git/contrib/completion/git-completion.bash
     fi
 fi
+
 
