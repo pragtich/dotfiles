@@ -56,4 +56,6 @@ set smartcase          " but not when I type a capital
 "
 nnoremap <leader><space> :nohlsearch<CR>
 
+set number relativenumber " Hybrid line numbering
+
 
