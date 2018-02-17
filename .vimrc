@@ -50,6 +50,10 @@ set showmatch		" Matching braces
 
 set incsearch           " search as characters are entered
 set hlsearch            " highlight matches
+set ignorecase         " ignore case in searches
+set smartcase          " but not when I type a capital
 " turn off search highlight
+"
 nnoremap <leader><space> :nohlsearch<CR>
+
 
