@@ -179,5 +179,5 @@ bindsym $mod+e exec --no-startup-id caja --no-desktop .
 #
 ####################################
 
-exec nm-applet
-exec mate-volume-control-applet
+exec --no-startup-id nm-applet
+exec --no-startup-id mate-volume-control-applet
