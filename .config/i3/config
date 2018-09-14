@@ -179,7 +179,7 @@ set $statuscmd i3status
 set $statussig SIGUSR1
 
 # Amount to increase/decrease volume as a percentage (used with -i, -d)
-set $volumestep 5
+set $volumestep 10
 
 # alsa-utils settings when not using pulseaudio-utils
 #
