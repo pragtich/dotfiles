@@ -31,3 +31,7 @@ PATH=/Applications/Emacs.app/Contents/MacOS:$PATH
 PATH=$PATH:~/.gem/ruby/1.8/bin
 PATH=/usr/local/sbin:/usr/local/bin:$PATH
 export PATH
+
+alias pru="pio run -t upload"
+alias prum="pio run -t upload -t monitor"
+alias pdm="pio device monitor"
