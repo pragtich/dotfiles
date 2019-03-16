@@ -17,7 +17,7 @@ esac
 export EMACS
 
 export ECLIENT="emacsclient -s /tmp/emacs${UID}/server -a $EMACS"
-export EDITOR="$ECLIENT \$@ "
+export EDITOR="$ECLIENT "
 export VISUAL=$EDITOR
 export GIT_EDITOR="$VISUAL +0"
 
