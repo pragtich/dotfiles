@@ -11,12 +11,14 @@ export LANG=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
 
 case $OSTYPE  in
-    linux*)  EMACS='emacs' ;;
-    darwin*) EMACS='/Applications/Emacs.app/Contents/MacOS/Emacs' ;;
+    linux*)  EMACS='emacs'
+	     ECL='emacsclient' ;;
+    darwin*) EMACS='/Applications/Emacs.app/Contents/MacOS/Emacs'
+	     ECL='/Applications/Emacs.app/Contents/MacOS/bin/emacsclient' ;;
 esac
-export EMACS
+export EMACS ECL
 
-export ECLIENT="emacsclient -s /tmp/emacs${UID}/server -a $EMACS"
+export ECLIENT="$ECL -s /tmp/emacs${UID}/server -a $EMACS"
 export EDITOR="$ECLIENT "
 export VISUAL=$EDITOR
 export GIT_EDITOR="$VISUAL +0"
