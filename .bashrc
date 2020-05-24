@@ -27,7 +27,7 @@ export IGNOREEOF=1
 
 PATH=~/.local/bin/:$PATH
 PATH=~/go/bin:$PATH
-PATH=/Applications/Emacs.app/Contents/MacOS:$PATH
+#PATH=/Applications/Emacs.app/Contents/MacOS:$PATH
 PATH=$PATH:~/.gem/ruby/1.8/bin
 PATH=/usr/local/sbin:/usr/local/bin:$PATH
 export PATH
