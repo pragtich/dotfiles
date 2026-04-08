@@ -2,7 +2,14 @@
 shopt -s nullglob
 shopt -s dotglob
 GLOBIGNORE="install.sh:.git:bin"
-for f in *; do 
+
+cd ~/dotfiles
+
+for f in *; do
+    if [[ -f ../$f ]] && [[ ! -s ../$f ]]; then
+	echo "Backing up original file $f to ${f}-orig"
+	mv ../$f ../${f}-orig
+    fi
   echo "Synlinking $f"
   ln -fs "$PWD/$f" "../$f"
 done
@@ -13,3 +20,5 @@ for f in bin/*; do
   echo "Symlinking executable $f"
   ln -fs "$PWD/$f" "../.local/$f"
 done	 
+
+cd -
