@@ -1,10 +1,7 @@
 # Get the aliases and functions
-if [ -f ~/.bashrc ]; then
-        . ~/.bashrc
-fi
-
-# Set architecture flags
-export ARCHFLAGS="-arch x86_64"
+#if [ -f ~/.bashrc ]; then
+#        . ~/.bashrc
+#fi
 
 # locale for remote logins
 export LANG=en_US.UTF-8
@@ -26,9 +23,6 @@ export GIT_EDITOR="$VISUAL +0"
 # Enable dir colors on mac
 export CLICOLOR=1
 
-# Disable xon
-stty -ixon
-
 function e()
 {
     $ECLIENT "$@" &
@@ -42,8 +36,6 @@ function ew()
 export -f ew
 
 mcd() { mkdir -p $1; cd $1; } 
-
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 
 if [[ "$OSTYPE" == "darwin"* ]]; then 
     # Setting PATH for Python 2.7
@@ -75,7 +67,6 @@ if [[ "$OSTYPE" == "darwin"* ]]; then
 	source /usr/local/git/contrib/completion/git-completion.bash
     fi
 fi
-
 
 
 
