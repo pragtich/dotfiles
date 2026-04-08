@@ -1,1 +1,1 @@
-/Users/pragtich/dotfiles/.vim
+/home/pragtich/dotfiles/.vim
