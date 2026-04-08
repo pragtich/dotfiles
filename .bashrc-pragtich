@@ -2,35 +2,32 @@
 #Larger open file limit for duplicity / duply
 ulimit -n 1024
 
-PS1='\h:\W \u\$ '
+#PS1='\h:\W \u\$ '
 
-#Bind commands
+#Bind commands and configure shell when FD 1 (stdin) is a terminal
 if [ -t 1 ] 
 then
   bind 'set completion-ignore-case on'
   bind 'set show-all-if-ambiguous on'
+
+  #History
+  export HISTSIZE=10000
+  shopt -s histappend
+
+  # Miscellaneous settings
+  shopt -s checkwinsize
+  shopt -s autocd
+  shopt -s cdspell
+  shopt -s dirspell
+  shopt -s checkjobs
+  shopt -s cmdhist
+  shopt -s globstar
+
+  export IGNOREEOF=1
 fi
 
-#History
-export HISTSIZE=10000
-shopt -s histappend
+export PATH=~/.local/bin/:$PATH
 
-shopt -s checkwinsize
-shopt -s autocd
-shopt -s cdspell
-shopt -s dirspell
-shopt -s checkjobs
-shopt -s cmdhist
-shopt -s globstar
-
-export IGNOREEOF=1
-
-PATH=~/.local/bin/:$PATH
-PATH=~/go/bin:$PATH
-#PATH=/Applications/Emacs.app/Contents/MacOS:$PATH
-PATH=$PATH:~/.gem/ruby/1.8/bin
-PATH=/usr/local/sbin:/usr/local/bin:$PATH
-export PATH
 
 alias pru="pio run -t upload"
 alias prum="pio run -t upload -t monitor"
