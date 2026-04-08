@@ -11,35 +11,6 @@
 export LANG=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
 
-case $OSTYPE  in
-    linux*)  EMACS='emacs'
-	     ECL='emacsclient' ;;
-    darwin*) EMACS='/Applications/Emacs.app/Contents/MacOS/Emacs'
-	     ECL='/Applications/Emacs.app/Contents/MacOS/bin/emacsclient' ;;
-esac
-export EMACS ECL
-
-export ECLIENT="$ECL -s /tmp/emacs${UID}/server -a $EMACS"
-export EDITOR="$ECLIENT "
-export VISUAL=$EDITOR
-export GIT_EDITOR="$VISUAL +0"
-
-# Enable dir colors on mac
-export CLICOLOR=1
-
-function e()
-{
-    $ECLIENT "$@" &
-}
-export -f e
-
-function ew()
-{
-    $ECLIENT -c "$@" &
-}
-export -f ew
-
-mcd() { mkdir -p $1; cd $1; } 
 
 if [[ "$OSTYPE" == "darwin"* ]]; then 
     # Setting PATH for Python 2.7
