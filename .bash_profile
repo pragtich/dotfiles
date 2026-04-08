@@ -3,6 +3,10 @@
 #        . ~/.bashrc
 #fi
 
+# If .profile is present, I probably want to source it (Mint)
+# Mint's .profile also sources .bashrc if we're running bash
+[[ -f ~/.profile ]] && source ~/.profile
+
 # locale for remote logins
 export LANG=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
