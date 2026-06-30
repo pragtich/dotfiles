@@ -62,3 +62,7 @@ function ew()
 export -f ew
 
 mcd() { mkdir -p $1; cd $1; } 
+
+# Solve a bug in QT-python apps where fonts are sometimes not displayed properly:
+# https://issues.guix.gnu.org/57137
+export QTWEBENGINE_CHROMIUM_FLAGS="--no-sandbox"
